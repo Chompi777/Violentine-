@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color:#cc9fea ;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Título más grande y con mejor contraste */
+.title {
+    font-size: 48px;
+    color: #073274;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones más bonitos */
+.btn {
+    font-size: 24px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Botón de "Sí" */
+.btn.yes {
+    background-color: #e159be;
+    color: white;
+}
+
+.btn.yes:hover {
+    background-color: #cc9fea;
+}
+
+/* Botón de "No" */
+.btn.no {
+    background-color: #9262b2;
+    color: white;
+}
+
+.btn.no:hover {
+    background-color: #073274;
+}
+
+/* Botón de confirmación */
+#confirmBtn {
+    background-color: #ff4081;
+    color: white;
+    font-weight: bold;
+}
+
+#confirmBtn:hover {
+    background-color: #d81b60;
+}
+
+/* Corrección para que el modal esté oculto al inicio */
+.hidden {
+    display: none !important;
+}
+
+.final-message {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #e159be;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-image-wrapper {
+    position: relative;
+}
+
+.modal-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Flores alrededor de la imagen */
+.flowers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.flower {
+    width: 40px;
+    height: auto;
+}
+
+.flower.left {
+    transform: rotate(45deg);
+}
+
+.flower.right {
+    transform: rotate(-45deg);
+}
+
+/* Texto "Te amo" */
+.te-amo {
+    font-size: 36px;
+    color: #073274;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Imágenes de ositos */
+.corner-image {
+    position: absolute;
+    width: 150px;
+}
+
+.corner-image.left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.corner-image.right {
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="card" class="card">
+        <h2 class="title">💌 Te ha llegado una invitación 💌</h2>
+        <button class="btn" onclick="showMain()">Abrir</button>
+        
+        <!-- Imágenes en la primera pantalla -->
+        <img src="/assets/GrumpyCare.png" class="corner-image left" alt="Osito izquierda">
+        <img src="/assets/CheerBear.png" class="corner-image right" alt="Osito derecha">
+    </div>
+
+    <div id="main" class="container hidden">
+        <h2 class="title">¿Quieres ser mi Valentín? ❤️</h2>
+        <button class="btn yes" onclick="showHearts()">Sí</button>
+        <button id="noBtn" class="btn no" onclick="changeText()">No</button>
+          
+        <!-- Imágenes en la primera pantalla -->
+        <img src="/assets/GrumpyCare.png" class="corner-image left" alt="Osito izquierda">
+        <img src="/assets/CheerBear.png" class="corner-image right" alt="Osito derecha">
+    </div>
+
+    <div id="finalMessage" class="final-message"></div>
+    
+    <!-- Botón de confirmación -->
+    <button id="confirmBtn" class="btn hidden" onclick="openModal()">Confirmar Invitación</button>
+
+    <!-- Modal corregido -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-image-wrapper">
+                <img src="/assets/nosotros.jpeg" alt="Nosotros" class="modal-image">
+            </div>
+            <h2 class="te-amo">Te amo ❤️</h2>
+        </div>
+    </div>
+
+    <!-- Audio para reproducir al confirmar (sin loop) -->
+    <audio id="valentineSound" src="assets/tuvaca.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
